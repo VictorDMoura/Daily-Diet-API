@@ -5,6 +5,7 @@ import { app } from "../src/app";
 
 describe("Users routes", () => {
   beforeAll(async () => {
+    execSync("npm run migrate:up");
     await app.ready();
   });
 
