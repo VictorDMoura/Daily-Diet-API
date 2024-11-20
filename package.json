@@ -1,0 +1,29 @@
+{
+  "name": "daily-diet-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
+    "migrate:create": "npm run knex migrate:make",
+    "migrate:up": "npm run knex migrate:latest",
+    "migrate:down": "npm run knex migrate:rollback"
+  },
+  "keywords": [],
+  "author": "Victor de Moura Almeida",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.1.0",
+    "knex": "^3.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "sqlite3": "^5.1.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
