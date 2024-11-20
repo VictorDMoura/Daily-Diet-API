@@ -7,7 +7,8 @@
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
     "migrate:create": "npm run knex migrate:make",
     "migrate:up": "npm run knex migrate:latest",
-    "migrate:down": "npm run knex migrate:rollback"
+    "migrate:down": "npm run knex migrate:rollback",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "Victor de Moura Almeida",
@@ -23,7 +24,9 @@
   "devDependencies": {
     "@types/node": "^22.9.1",
     "sqlite3": "^5.1.7",
+    "supertest": "^7.0.0",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
   }
 }
